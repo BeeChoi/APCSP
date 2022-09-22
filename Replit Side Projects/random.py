@@ -1,5 +1,5 @@
-import random
-answer = random.randint(0, 30)
+from random import randint
+answer = randint(0, 30)
 attempt = 0
 # print(answer) # for debugging purposes only
 while attempt < 5:
