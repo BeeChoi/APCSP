@@ -1,5 +1,6 @@
-IntAmount = float(input("What is your measurement? "))
-IntUnit = input("What unit is your measurement in? (singular, lowercase) ")
+IntAmount = float(input("What is your measurement amount (a number)? "))
+IntUnit = input("""What unit is your measurement in? (singular, lowercase) 
+Options: cup, pint, quart, gallon: """)
 IntUnit = IntUnit.lower()
 
 if IntUnit == "cup":
