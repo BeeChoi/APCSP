@@ -13,7 +13,7 @@ Choices:
 9: Swiss Francs
 10: Tanzanian Shillings
 """)
-currency = input("What currency do you want to convery to? ")
+currency = input("What currency do you want to convert to? ")
 
 if currency == "1":
     print(f"{toConvert * 0.90} British Pounds")
