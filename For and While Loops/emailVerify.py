@@ -47,8 +47,11 @@ if len(email[1][0]) < 1:
 else:
     for x in email[1][0]:
         if x in symbols:
-            print("Error: No Symbols Allowed In Email Domain Name")
-            exit()
+            if x == "@" and email[1][0].count("@") == 1:
+                continue
+            else:
+                print("Error: No Symbols Allowed In Email Domain Name")
+                exit()
         else:
             continue
 
