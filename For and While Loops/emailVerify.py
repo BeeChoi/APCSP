@@ -40,8 +40,7 @@ else:
         email[1][2] += x
     email[1].remove(email[1][1])
 
-
-if len(email[1][0]) < 1:
+if len(email[1][0]) < 2:
     print("Error: Email Domain Name Must Be At Least 1 Character")
     exit()
 else:
