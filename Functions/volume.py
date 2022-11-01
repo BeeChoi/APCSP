@@ -10,8 +10,8 @@ def sphere(radius):
 def cone(radius, height):
     volume = 1 / 3 * 3.14 * radius ** 2 * height
     print(f"The volume of the cone is {volume}")
-def pyramid(base, height):
-    volume = 1 / 3 * base * height
+def pyramid(base, base2, height):
+    volume = 1 / 3 * ((base * base2 ) * height)
     print(f"The volume of the pyramid is {volume}")
 def rectangular_prism(length, width, height):
     volume = length * width * height
@@ -33,10 +33,10 @@ elif shape == "cone":
     height = float(input("What is the height of the cone? "))
     cone(radius, height)
 elif shape == "pyramid":
-    base = float(input("What is the base of the pyramid? "))
+    base1 = float(input("What is the base of the pyramid? "))
+    base2 = float(input("What is the other base of the pyramid? "))
     height = float(input("What is the height of the pyramid? "))
-    volume = base * height / 3
-    print(f"The volume of the pyramid is {volume}")
+    pyramid(base1, base2, height)
 elif shape == "rectangular prism":
     length = float(input("What is the length of the rectangular prism? "))
     width = float(input("What is the width of the rectangular prism? "))
