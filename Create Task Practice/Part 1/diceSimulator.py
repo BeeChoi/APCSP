@@ -31,11 +31,19 @@ def mode(sumDice):
 
 
 
-def main():
+def dice_sim(num_rolls, num_dice):
+    sumDice = roll_dice(num_rolls, num_dice)
+    print("The max is: ", max(sumDice))
+    print("The min is: ", min(sumDice))
+    print("The mean is: ", mean(sumDice))
+    print("The median is: ", median(sumDice))
+    print("The mode is: ", mode(sumDice))
+
+    
+    
+def main():   
     num_rolls = int(input("How many times do you want to roll the dice? "))
     num_dice = int(input("How many dice do you want to roll? "))
-    sumDiceList = roll_dice(num_rolls, num_dice)
-    print(sumDiceList)
-    print(mean(sumDiceList))
+    dice_sim(num_rolls, num_dice)
 
 main()
